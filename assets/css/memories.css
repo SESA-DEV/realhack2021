@@ -4,3 +4,10 @@
     position: relative;
     z-index: 9;
   }
+
+.card{
+  display: inline-block;
+}
+.card-title{
+  margin-top: -50px;
+}
