@@ -62,8 +62,9 @@
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 			var targetHash = this.hash;
 			var target = $(this.hash);
+			
 			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-			if (target.length) {
+			if (target.length) {				
 				var width = $(window).width();
 				if (width < 991) {
 					$('.menu-trigger').removeClass('active');
@@ -72,7 +73,7 @@
 				$('html,body').animate({
 					scrollTop: (target.offset().top)
 				}, 700, 'swing', function () {
-					window.location.hash = targetHash;
+					//window.location.hash = targetHash;
 				});
 				return false;
 			}
