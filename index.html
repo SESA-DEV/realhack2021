@@ -87,7 +87,7 @@
                             <li class="submenu">
                                 <a href="javascript:;">More</a>
                                 <ul>
-                                    <li><a href="registrations.html" class="submenu-item">Register</a></li>    
+                                    <li><a href="registrations.html" class="submenu-item" style="pointer-events: none;cursor: default;">Register</a></li><!-- **** display none Change Here **** -->
                                     <li><a href="memories.html" class="submenu-item" >Memories </a></li>   
                                     <li><a href="about.html" class="submenu-item" >Who we are ? </a></li> 
                                     <li><a href="FAQ's.html" class="submenu-item">FAQ's</a></li>                                   
@@ -201,13 +201,13 @@
     
     <!-- ***** Timer Start ***** -->
     <div data-scroll-reveal="enter right move 30px over 0.3s after 0.2s"></div>
-        <section class="section" id="timer">
+        <section class="section d-none" id="timer"><!-- **** display none Change Here **** -->
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
                         data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
                     <h2>Registraion closes in</h2>
-                    <div id="DateCountdown" data-date="2021-05-31 00:00:00"></div>
+                    <div id="DateCountdown" data-date="2022-05-31 00:00:00"></div>
                     <p class="mb-4">Hurry up and Register Now. Pre-hack will begin at 7.00pm on 2nd of November</p>
                     <a href="registrations.html" class="register-button">REGISTER NOW!</a>
                 </div>
@@ -229,6 +229,17 @@
                     </p>
                 </div>
             </div>
+        </section>
+
+        <!-- Registration will open soon -->
+        <section class="soon">
+            <h3>Keep calm & Don't panic</h3>
+            <h4>Wash Hands | Wear Masks | Use Hand Sanitiser | Stay Home</h4>
+            <h5>Protect yourself and others from COVID-19.</h5>
+            <img src="assets/images/objects/man-mask.svg">
+            <h2>Registraion Will Open Very Soon</h2>
+            <div class="dot-collision"></div>
+
         </section>
     <!-- ***** Timer End ***** -->
 
@@ -314,7 +325,7 @@
     <!--End of what is real hack-->
 
     <!-- ***** Awards start ***** -->
-    <section class="section" id="awards">
+    <section class="section d-none" id="awards"><!-- **** display none Change Here **** -->
         <div class="container">
             <!-- Confettis Animation -->
             <div id="confettis" data-scroll-reveal="enter bottom move 30px over 0.3s after 0.2s">
@@ -365,10 +376,10 @@
     </section>
     <!--  ***** Awards End ***** -->
 
-    <div class="left-image-decor"></div>
+    <div class="left-image-decor d-none"></div><!-- **** display none Change Here **** -->
 
     <!-- ***** Timeline Start ***** -->
-    <section class="section" id="timeline" style="position: relative; z-index: 99;">
+    <section class="section d-none" id="timeline" style="position: relative; z-index: 99;"><!-- **** display none Change Here **** -->
         <div class="container">
             <div class="row">
                 <div class="left-image col-lg-5 col-md-8 col-sm-12 mobile-bottom-fix-big"
@@ -488,7 +499,7 @@
     </section> 
     <!-- ***** Timeline End ***** -->
 
-    <div class="right-image-decor"></div> 
+    <div class="right-image-decor d-none"></div><!-- **** display none Change Here **** -->
 
     <!-- ***** Rules&Regulations Starts ***** -->
     <section class="section" id="rulesregulations">
@@ -509,7 +520,7 @@
                         </h5>
                         <h3>
                             <p style="margin-top: 30px; margin-bottom: 20px;">Download Rules & Regulations</p>                        
-                            <a href="assets/document/realhack2021-rules.pdf"  download="realhack3-2021-rules" class="main-button-slider" data-wow-delay="0.2s" style="position: relative; z-index: 99;">Download</a>
+                            <a href="assets/document/realhack2021-rules.pdf"  download="realhack3-2021-rules" class="main-button-slider" data-wow-delay="0.2s" style="position: relative; z-index: 99; pointer-events: none;cursor: default;">Download</a><!-- **** display none Change Here **** -->
                         </h3>
                     </div>
                 </div>
@@ -523,10 +534,10 @@
     </section> 
     <!-- **** Rules&Regulations End **** -->
 
-    <div class="left-image-decor"></div>
+    <div class="left-image-decor d-none"></div><!-- **** display none Change Here **** -->
    
     <!-- **** Partners Introduction Start ****-->
-    <section class="section" id="sponsors">
+    <section class="section d-none" id="sponsors"><!-- **** display none Change Here **** -->
         <div class="container">
             <div class="row">                
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
@@ -642,7 +653,7 @@
     <!-- **** Footer Buttons Start **** -->
     <div class="container more_buttons">
         <div class="row d-flex justify-content-center" >
-            <a href="registrations.html"  class="more-button">Register Now</a> 
+            <a href="registrations.html"  class="more-button" style="pointer-events: none;cursor: default;">Register Now</a> <!-- **** display none Change Here **** -->
             <a href="memories.html" class="more-button">Memories</a>
             <a href="about.html" class="more-button">about us</a>
             <a href="FAQ's.html" class="more-button">FAQ's</a>            
@@ -722,7 +733,7 @@
             }
         });
         setInterval(function(){
-        $closing_time = new Date("Wed May 25 2021 00:00:00 GMT+0530"); //Change the closing time here
+        $closing_time = new Date("Wed May 25 2022 00:00:00 GMT+0530"); //Change the closing time here
         $current_time = new Date();
         if($current_time > $closing_time){
             $("#timer").hide();
