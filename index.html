@@ -26,10 +26,12 @@
     <link rel="stylesheet" href="assets/css/timeline.css"/>
     <link rel="stylesheet" href="assets/css/confetti.css"/>     
     <link rel="stylesheet" href="assets/css/paricles.css"/>    
-
+    <link rel="stylesheet" href="assets/css/particles_2.css">
     <!-- Additional JS Files -->
     <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="assets/js/TimeCircles.js"></script>  
+   
+   
 </head>
 
 <body>
@@ -105,6 +107,13 @@
         </div>
     </header>
     <!-- ***** Header Area End ***** -->
+
+    
+    <div class="anim">
+        <div class="purple"></div>
+        <div class="medium-blue"></div>                                  
+    </div>  
+
 
     <div style="margin-top: 30px;" class="left-image-decor"></div>
     <!-- ***** Welcome Area Start ***** -->
@@ -559,39 +568,45 @@
     </section> 
     <!-- **** Rules&Regulations End **** -->
 
-    <div class="left-image-decor d-none"></div><!-- **** display none Change Here **** -->
+    <div class="left-image-decor d-none"></div>
    
     <!-- **** Partners Introduction Start ****-->
-    <section class="section d-none" id="sponsors"><!-- **** display none Change Here **** -->
+    <section class="section " id="sponsors"><!-- **** display none Change Here **** -->
         <div class="container">
             <div class="row">                
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
-                    data-scroll-reveal="enter bottom move 30px over 0.3s after 0.2s">
+                    data-scroll-reveal="enter bottom move 30px over 0.5s after 0.3s">
                     <div class="sponsor-item">
                         <div class="center-heading"
-                        data-scroll-reveal="enter left move 30px over 0.3s after 0.2s" style="margin-bottom: 10px;">
+                        data-scroll-reveal="enter left move 30px over 0.5s after 0.3s" style="margin-bottom: 10px;">
                             <h2><em>Our Partners</em></h2>                       
                         </div>
                         
                         <fieldset class="the-fieldset">
-                            <legend class="the-legend"> <h4 style="color: #448ba8">Official Gold Partners</h4> </legend>
-                            
-                            <div class="row">                          
-                                <div class="col"
-                                data-scroll-reveal="enter bottom move 30px over 0.3s after 0.2s">
-                                    <img src="assets/images/sponcers/Insharplogo.png" width="200" >
-                                </div>                         
-                            </div>
+                            <legend class="the-legend"> <h3 style="color: #448ba8">Official Platinum Partner</h4> </legend>                                                         
+                                                          
+                            <div class="row">                                                   
+                                <div style="position: relative;z-index: 99;" class="col"
+                                   data-scroll-reveal="enter bottom move 30px over 0.5s after 0.3s">
+                                    <a target="_blank" href="https://www.ifs.com/">
+                                       <img src="assets/images/sponcers/IFS.png" width="200" >                                  
+                                       <h3 style="color: #330099;">IFS</h3>  
+                                       <p>Enterprise software company</p>   
+                                    </a>    
+                                </div>                                                                                                            
+                            </div>                    
+                                      
                         </fieldset>
 
-                        <fieldset class="the-fieldset">
+                        <fieldset class="the-fieldset d-none">
                             <legend class="the-legend"> <h4 style="color: #448ba8">Official Silver Partners</h4> </legend>     
                             
                             <div class="row">                           
                                 <div class="col-sm-6"
-                                data-scroll-reveal="enter bottom move 30px over 0.3s after 0.2s">
+                                  data-scroll-reveal="enter bottom move 30px over 0.3s after 0.2s">
                                     <img src="assets/images/sponcers/zone.png" height="80px">
                                 </div>
+
                                 <div class="col-sm-6"
                                 data-scroll-reveal="enter bottom move 30px over 0.3s after 0.2s">
                                     <img src="assets/images/sponcers/tribber.png" height="80px" >
@@ -600,7 +615,7 @@
                             </div>
                         </fieldset>
 
-                        <fieldset class="the-fieldset">
+                        <fieldset class="the-fieldset d-none">
                             <legend class="the-legend"> <h4 style="color: #448ba8">Official Bronze Partners</h4> </legend>    
                             
                             <div class="row">                           
@@ -621,7 +636,7 @@
                             </div>
                         </fieldset> 
 
-                        <fieldset class="the-fieldset">
+                        <fieldset class="the-fieldset d-none">
                             <legend class="the-legend"> <h4 style="color: #448ba8">Official Event Partners</h4> </legend>    
                             <div class="row ">
                                 <div class="col-sm-3"  data-scroll-reveal="enter bottom move 30px over 0.3s after 0.2s">
@@ -640,7 +655,7 @@
                             </div>
                         </fieldset> 
 
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center d-none">
                             <fieldset class="col-sm-3 the-fieldset"  data-scroll-reveal="enter bottom move 30px over 0.3s after 0.2s">
                                 <legend class="the-legend"> <h4 style="color: #448ba8">Official Digital Partner</h4> </legend>     
                                
@@ -660,7 +675,7 @@
                             </fieldset>            
                         </div>
 
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center d-none">
                             <fieldset class="col-sm-3 the-fieldset"  data-scroll-reveal="enter bottom move 30px over 0.3s after 0.2s">
                                 <legend class="the-legend"> <h4 style="color: #448ba8">Official OutReach Partner</h4> </legend>     
                                
@@ -729,7 +744,12 @@
     <!-- **** JS Scripts ****-->
 
     <!-- Timer -->
+   
+        
+
     <script>
+  
+  
         $("#DateCountdown").TimeCircles({
             "animation": "smooth",
             "bg_width": 1,
@@ -764,18 +784,23 @@
         if($current_time > $closing_time){
             $("#timer").hide();
             $("#timer_close").show();
-        }},1000)
+        }},1000)    
+
+      
+      
     </script>
     
      
-      
+  
     <!-- Bootstrap -->
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-
+    
     <!-- Plugins -->
     <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/scrollreveal.min.js"></script>          
+    <script src="assets/js/scrollreveal.min.js"></script>    
+    
+   
 
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
