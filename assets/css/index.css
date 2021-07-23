@@ -1183,7 +1183,31 @@ time line and rules regulations
   text-align: center;
 
 }
+.responsive_zincat{
+  width: 72%;
+  height: auto;
+}
+.responsive_shutter{
+  margin-top: 25px;
+  width: 75%;
+  height: auto;
+}
 
+@media (max-width: 600px) {
+  .responsive_shutter{
+    margin-top: 5px;
+    width: 75%;
+    height: auto;
+  }
+
+}
+
+
+
+.responsive{
+  width: 75%;
+  height: auto;
+}
 
 
 /* 
