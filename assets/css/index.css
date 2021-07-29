@@ -1187,14 +1187,14 @@ time line and rules regulations
   width: 72%;
   height: auto;
 }
-.responsive_shutter{
+.responsive_shutter_hackthons{
   margin-top: 20px;
   width: 75%;
   height: auto;
 }
 
 @media (max-width: 600px) {
-  .responsive_shutter{
+  .responsive_shutter_hackthons{
     margin-top: 5px;
     width: 75%;
     height: auto;
