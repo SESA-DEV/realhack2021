@@ -218,7 +218,7 @@
                         data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
                     <h2>Registraion closes in</h2>
                     <div id="DateCountdown" data-date="2021-08-07 00:00:00"></div>
-                    <p class="mb-4">Hurry up and Register Now. Pre-hack will begin at 7.00pm on 4th of September</p>
+                    <p class="mb-4">Hurry up and Register Now. </p>
                     <a href="registrations.html" class="register-button">REGISTER NOW!</a>
                 </div>
             </div>
@@ -231,8 +231,8 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
                         data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
                     <h2>Registration opens in</h2>
-                    <div id="DateCountdown" data-date="2021-08-01 00:00:00"></div>
-                    <p class="mb-4">Registrations will be open from 12.00am on 1st of August</p>                    
+                    <div id="DateCountdown" data-date="2021-08-01 19:00:00"></div>
+                    <p class="mb-4">Registrations will be open from 7.00pm on 1st of August</p>                    
                 </div>
             </div>
         </section>
@@ -247,7 +247,7 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
                         data-scroll-reveal="enter bottom move 30px over 0.3s after 0.2s">
                     <img style="width: 250px;" src="assets/images/objects/clock.svg">
-                    <p class="mb-4">Registration for the REAL HACK 3.0 has been closed because we have reached the maximum number of registrations for the event.Don't worry Try next year. <br>Thank you for your interest!
+                    <p class="mb-4">Registration for the REAL HACK 3.0 has been closed. Don't worry Try next year. <br>Thank you for your interest!
 
                     </p>
                 </div>
@@ -811,7 +811,7 @@
             }
         });
         setInterval(function(){
-        $closing_time = new Date("Sun Aug 07 2021 00:00:00 GMT+0530"); //Change the closing time here
+        $closing_time = new Date("Sun Aug 15 2021 00:00:00 GMT+0530"); //Change the closing time here
         $current_time = new Date();
         if($current_time > $closing_time){
             $("#timer").hide();
@@ -840,15 +840,3 @@
 </body>
 </html>
 
-<!--
-    Registration will open soon 
-    <section id="soon" class="soon">
-        <h3>Keep calm & Don't panic</h3>
-        <h4>Wash Hands | Wear Masks | Use Hand Sanitiser | Stay Home</h4>
-        <h5>Protect yourself and others from COVID-19.</h5>
-        <img src="assets/images/objects/man-mask.svg">
-        <h2>Registration will be open soon</h2>
-        <div class="dot-collision"></div>
-
-    </section>
--->
