@@ -81,15 +81,16 @@
                         </a>
                         <!-- ***** Logo End ***** -->
 
-                        <!-- ***** Menu Start ***** -->
+                        <!-- ***** Menu Start style="pointer-events: none;cursor: default;" ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>                            
                             <li class="scroll-to-section"><a href="#timeline" class="menu-item">Timeline</a></li> 
-                            <li class="scroll-to-section"><a href="#sponsors" class="menu-item">Our Partners</a></li>                     
+                            <li class="scroll-to-section"><a href="#sponsors" class="menu-item">Our Partners</a></li>    
+                            <li class="scroll-to-section"><a href="#rulesregulations" class="menu-item">Rules&Regulations</a></li>                          
                             <li class="submenu">
                                 <a href="javascript:;">More</a>
                                 <ul>
-                                    <li><a href="registrations.html" class="submenu-item" style="pointer-events: none;cursor: default;">Register</a></li><!-- **** display none Change Here **** -->
+                                    <li><a href="registrations.html" class="submenu-item" >Register</a></li><!-- **** display none Change Here **** -->
                                     <li><a href="memories.html" class="submenu-item" >Memories </a></li>   
                                     <li><a href="about.html" class="submenu-item" >Who we are ? </a></li> 
                                     <li><a href="FAQ's.html" class="submenu-item">FAQ's</a></li>                                   
@@ -210,21 +211,21 @@
     
     <!-- ***** Timer Start ***** -->
     <div data-scroll-reveal="enter right move 30px over 0.3s after 0.2s"></div>
-       <!-- Registration Start After Finish Coundown
-        <section class="section d-none" id="timer">
+      
+        <section class="section " id="timer">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
                         data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
-                    <h2>Registraion closes in</h2>
-                    <div id="DateCountdown" data-date="2021-08-07 00:00:00"></div>
-                    <p class="mb-4">Hurry up and Register Now. </p>
+                    <h2>Registraion closes on</h2>
+                    <div id="DateCountdown" data-date="2021-08-08 00:00:00"></div>
+                    <p class="mb-4">Registrations will be closed on 12.00am on 8th of August  2021. </p>
                     <a href="registrations.html" class="register-button">REGISTER NOW!</a>
                 </div>
             </div>
-        </section>  -->
+        </section>  
         
-         <!-- Registration  Coundown-->
+         <!-- Registration  Coundown
         <section class="section" id="timer">
             <div class="container">
                 <div class="row">
@@ -235,7 +236,7 @@
                     <p class="mb-4">Registrations will be open from 7.00pm on 1st of August</p>                    
                 </div>
             </div>
-        </section>
+        </section>-->
 
         <!-- Registration closed -->
         <section class="section" id="timer_close" >
@@ -552,9 +553,9 @@
                         <h5>
                             All teams must compete in the pre-hack
                         </h5>
-                        <h3 class="d-none"> <!-- **** display none Change Here **** -->
+                        <h3 > <!-- **** display none Change Here **** -->
                             <p style="margin-top: 30px; margin-bottom: 20px;">Download Rules & Regulations</p>                        
-                            <a href="assets/document/realhack2021-rules.pdf"  download="realhack3-2021-rules" class="main-button-slider" data-wow-delay="0.2s" style="position: relative; z-index: 99; pointer-events: none;cursor: default;">Download</a><!-- **** display none Change Here **** -->
+                            <a href="assets/document/realhack3-2021-rules.pdf"  download="realhack3-2021-rules" class="main-button-slider" data-wow-delay="0.2s" style="position: relative; z-index: 99; ">Download</a><!-- **** display none Change Here **** -->
                         </h3>
                     </div>
                 </div>
@@ -811,7 +812,7 @@
             }
         });
         setInterval(function(){
-        $closing_time = new Date("Sun Aug 15 2021 00:00:00 GMT+0530"); //Change the closing time here
+        $closing_time = new Date("Sun Aug 08 2021 00:00:00 GMT+0530"); //Change the closing time here
         $current_time = new Date();
         if($current_time > $closing_time){
             $("#timer").hide();
