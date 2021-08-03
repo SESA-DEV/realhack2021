@@ -1145,6 +1145,23 @@ time line and rules regulations
 }
 
  /* Sponsors */
+
+.top{
+  margin-top: 50px;
+}
+@media (max-width: 600px) {
+  .top{
+    margin-top: 25px;
+  }
+
+}
+@media (max-width: 600px) {
+  .respon-top{
+    margin-top: 25px;
+  }
+
+}
+
  .the-legend {
   border-style: none;
   border-width: 0;
